@@ -1,0 +1,39 @@
+﻿<Window x:Class="BinancialServices.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BinancialServices"
+        mc:Ignorable="d"
+        Title="Binance Crypto Ticker" Height="450" Width="400">
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Column="1" Grid.Row="1" FontSize="10" Padding="5">
+            Binance Price Stream
+        </TextBlock>
+        <TextBox x:Name="PriceBox"  Grid.Row="2" Grid.Column="1" Width="300" Height="150" Padding="0" HorizontalContentAlignment="Center" />
+        <Label Content="Currency Pair" Grid.Row="3" Grid.Column="1" FontSize="12" VerticalAlignment="Center"/>
+        <TextBox x:Name="SymbolBox" Grid.Row="3" Grid.Column="1" Width="70" Text="{Binding Path=Symbol}" HorizontalAlignment="Center" Margin="10" Padding="5"/>
+        <Label Content="Percent Change" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" FontSize="12" />
+        <TextBox x:Name="PercentChange" Grid.Row="4" Grid.Column="1" Width="70" Text="{Binding Path=PercentChange}" HorizontalAlignment="Center" Margin="10" Padding="5" />
+
+    </Grid>
+</Window>
