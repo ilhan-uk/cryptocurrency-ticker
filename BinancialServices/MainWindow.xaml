@@ -32,7 +32,7 @@
         <TextBox x:Name="PriceBox"  Grid.Row="2" Grid.Column="1" Width="300" Height="150" Padding="0" HorizontalContentAlignment="Center" />
         <Label Content="Currency Pair" Grid.Row="3" Grid.Column="1" FontSize="12" VerticalAlignment="Center"/>
         <TextBox x:Name="SymbolBox" Grid.Row="3" Grid.Column="1" Width="70" Text="{Binding Path=Symbol}" HorizontalAlignment="Center" Margin="10" Padding="5"/>
-        <Label Content="Percent Change" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" FontSize="12" />
+        <Label Content="Percent Target" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" FontSize="12" />
         <TextBox x:Name="PercentChange" Grid.Row="4" Grid.Column="1" Width="70" Text="{Binding Path=PercentChange}" HorizontalAlignment="Center" Margin="10" Padding="5" />
 
     </Grid>

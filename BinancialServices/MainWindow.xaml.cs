@@ -35,8 +35,8 @@ namespace BinancialServices
         /// </summary>
 
         public double Repeat { get; set; } = 0.5;
-        public string Symbol { get; set; } = "LTCUSDT";
-        public double PercentChange { get; set; } = 0;
+        public string Symbol { get; set; } = "BTCUSDT";
+        public double PercentChange { get; set; } = 1;
     }
 
     public partial class MainWindow : Window
@@ -64,7 +64,7 @@ namespace BinancialServices
         {
             
             //You must populate the the apiKey with your own from Binance.com, as well as the secret key.
-            string api_Key = "Api key here";
+            string api_Key = "API key here";
             string secretKey = "Secret key here";
 
 
