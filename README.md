@@ -83,6 +83,9 @@ namespace BinancialServices
     }
 }
 ```
+
+<image src="https://github.com/ilhan-uk/cryptocurrency-ticker/blob/master/Capture1.jpg" width=400 height=500>
+
 # Unit tests
 ```c#
 namespace XUnitTests
